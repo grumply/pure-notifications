@@ -1,0 +1,42 @@
+name:                pure-notifications
+version:             0.8.0.0
+homepage:            purehs.org/doc/pure-notifications
+license:             BSD3
+license-file:        LICENSE
+author:              Sean Hickman
+maintainer:          sean@grumply.com
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+source-repository head
+  type: git
+  location: https://github.com/grumply/pure-notifications.git
+
+library
+  exposed-modules:
+      Pure.Notifications
+    , Pure.Notifications.API
+    
+  other-modules:
+      Pure.Notifications.Acceleration
+    , Pure.Notifications.Between
+    , Pure.Notifications.Direction
+    , Pure.Notifications.Event
+    , Pure.Notifications.Interval
+    , Pure.Notifications.Notification
+    , Pure.Notifications.Offset
+    , Pure.Notifications.Proportions
+    , Pure.Notifications.Velocity
+    
+  build-depends:
+    base,
+    pure-elm,
+    pure-lifted,
+    pure-render,
+    pure-time,
+    pure-txt,
+    pure-websocket
+
+  hs-source-dirs:      src
+  default-language:    Haskell2010
