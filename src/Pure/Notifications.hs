@@ -14,7 +14,7 @@ import qualified Pure.Notifications.API as API
 import Pure.Data.Render ()
 import Pure.Data.Txt as Txt (tail)
 import Pure.Elm hiding (A, Start, between, duration)
-import Pure.WebSocket as WS
+import Pure.WebSocket as WS hiding (remove)
 
 import Control.Concurrent ( forkIO )
 import Control.Monad ( void )
