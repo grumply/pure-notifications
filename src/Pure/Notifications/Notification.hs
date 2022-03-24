@@ -1,4 +1,4 @@
-{-# language AllowAmbiguousTypes, PatternSynonyms, LambdaCase, BlockArguments, RankNTypes, TypeApplications, DataKinds, RecordWildCards, ViewPatterns, NamedFieldPuns, ScopedTypeVariables, PostfixOperators, OverloadedStrings, PolyKinds #-}
+{-# language AllowAmbiguousTypes, PatternSynonyms, LambdaCase, BlockArguments, RankNTypes, TypeApplications, DataKinds, RecordWildCards, ViewPatterns, NamedFieldPuns, ScopedTypeVariables, PostfixOperators, OverloadedStrings, PolyKinds, FlexibleContexts #-}
 module Pure.Notifications.Notification
   ( Notification (..),
     notification,

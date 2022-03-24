@@ -1,4 +1,4 @@
-{-# language LambdaCase, BlockArguments, TypeApplications, RecordWildCards, NamedFieldPuns, RankNTypes, PartialTypeSignatures #-}
+{-# language LambdaCase, BlockArguments, TypeApplications, RecordWildCards, NamedFieldPuns, RankNTypes, PartialTypeSignatures, FlexibleContexts #-}
 module Pure.Notifications
   ( Notifications(..),
     local,
@@ -54,7 +54,7 @@ update = \case
 
 startup :: Update
 startup nots@Notifications { remote } mdl = do
-  subscribe
+  subscribe @Msg
   for_ remote (`enact` (notificationsEndpoints nots))
   pure mdl
 
